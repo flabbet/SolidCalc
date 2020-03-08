@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="shapes">
+            <div class="shapeSelector" style="float:left; background-image: url('Rectangle.png');">
+            </div>
+            <div class="shapeSelector" style="float:left;  background-image: url('Triangle.png');">
+
+            </div>
+            <div class="shapeSelector" style="float:left; background-image: url('Sphere.png');">
+
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div id="objectArea">
+            <div id="renderer"></div>
+            <div id="calcArea">
+                <form>
+                    <input id="InputA" type="number" placeholder="Bok a" min="0" value="1" /> </br>
+                    <input id="InputB" type="number" placeholder="Bok b" min="0" value="1" /> </br>
+                    <input id="InputH" type="number" placeholder="Bok h" min="0" value="1" /> </br>
+                    <button type="button" style="float:left;" id="volumeBtn">Objętość</button>
+                    <button type="button" style="float:left;" id="areaBtn">Pole</button> </br>
+                <div style="clear: both;"></div>
+                </form>
+                <div id="resultBox">
+                    <span id="result"></span>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <script src="js/three.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/logic.js"></script>
+</body>
+
+</html>
